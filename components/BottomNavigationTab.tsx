@@ -21,7 +21,7 @@ export default function BottomNavigationTab() {
   const Tab = createMaterialBottomTabNavigator();
   
   return (
-    <Tab.Navigator>
+    <Tab.Navigator style={{zIndex: 100}}>
       <Tab.Screen name="Habits And Routines" component={HabitsAndRoutinesMenu} />
 
       <Tab.Screen name={` ${formatDate(date)} Tasks`} component={DailyTasksMenu} />
